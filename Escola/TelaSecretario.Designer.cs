@@ -37,10 +37,13 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnRegistrarProfessor
@@ -134,11 +137,31 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.button2);
+            this.groupBox5.Location = new System.Drawing.Point(136, 305);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(200, 100);
+            this.groupBox5.TabIndex = 6;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Grade aluno";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(51, 22);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(113, 62);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Registrar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // TelaSecretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(496, 450);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -151,6 +174,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,5 +191,7 @@
         private GroupBox groupBox3;
         private GroupBox groupBox4;
         private Button button1;
+        private GroupBox groupBox5;
+        private Button button2;
     }
 }

@@ -8,33 +8,31 @@ using System.Threading.Tasks;
 
 namespace Escola.Entities
 {
-    internal class Aluno
+    internal class Matricula
     {
         public int Id { get; set; }
-        public string Nome { get; set; }
-        public DateTime DataNascimento { get; set; }
-        public string Email { get; set; }
+        public int Aluno_Id { get; set; }
+        public int Turma_Id { get; set;  }
 
 
-        public int SalvarAluno()
+        public int Insert()
         {
                 using (var cn = ConexaoDB.GetConexao())
                 {
                     using var cmd = new MySqlCommand();
                     cmd.Connection = cn;
-                    cmd.CommandText = "INSERT INTO Alunos (nome, dataNascimento, email) VALUES (@nome, @dataNascimento, @email)";
-                    cmd.Parameters.AddWithValue("@nome", Nome);
-                    cmd.Parameters.AddWithValue("@dataNascimento", DataNascimento);
-                    cmd.Parameters.AddWithValue("@email", Email);
+                    cmd.CommandText = "INSERT INTO Matriculas (aluno_id, turma_id) VALUES (@aluno_id, @turma_id)";
+                    cmd.Parameters.AddWithValue("@aluno_id", Aluno_Id);
+                    cmd.Parameters.AddWithValue("@turma_id", Turma_Id);
 
-                    cmd.ExecuteNonQuery();
+                    int linhasAfetadas = cmd.ExecuteNonQuery();
                     string selectQuery = "SELECT LAST_INSERT_ID()";
                     MySqlCommand selectCommand = new MySqlCommand(selectQuery, cn);
                     int lastInsertedId = Convert.ToInt32(selectCommand.ExecuteScalar());
-                    MessageBox.Show("Aluno salvo com sucesso!");
                     return lastInsertedId;
-
                 }
+            
         }
     }
+           
 }

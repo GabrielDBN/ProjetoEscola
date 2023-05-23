@@ -36,11 +36,13 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.cbxTurmas = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(168, 197);
+            this.btnEnviar.Location = new System.Drawing.Point(167, 217);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(114, 23);
             this.btnEnviar.TabIndex = 0;
@@ -82,7 +84,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(98, 102);
+            this.lblEmail.Location = new System.Drawing.Point(102, 102);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(36, 15);
             this.lblEmail.TabIndex = 7;
@@ -108,11 +110,30 @@
             this.lblTitle.TabIndex = 11;
             this.lblTitle.Text = "Cadastro Aluno";
             // 
+            // cbxTurmas
+            // 
+            this.cbxTurmas.FormattingEnabled = true;
+            this.cbxTurmas.Location = new System.Drawing.Point(168, 167);
+            this.cbxTurmas.Name = "cbxTurmas";
+            this.cbxTurmas.Size = new System.Drawing.Size(114, 23);
+            this.cbxTurmas.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(102, 170);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 15);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Turma";
+            // 
             // CadastroAlunos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(413, 269);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbxTurmas);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.lblEmail);
@@ -138,5 +159,7 @@
         private Label lblEmail;
         private Label lblData;
         private Label lblTitle;
+        private ComboBox cbxTurmas;
+        private Label label1;
     }
 }

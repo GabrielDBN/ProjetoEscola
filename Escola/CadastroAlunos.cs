@@ -13,9 +13,19 @@ namespace Escola
 {
     public partial class CadastroAlunos : Form
     {
+
+        private List<Turma> turmas;
+        
+
+        
         public CadastroAlunos()
         {
+            
             InitializeComponent();
+            turmas = Turma.ListAll();
+            foreach (Turma turma in turmas) {
+                cbxTurmas.Items.Add(turma.Nome);
+            }
         }
 
         private void lblData_Click(object sender, EventArgs e)
@@ -26,10 +36,16 @@ namespace Escola
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             Aluno aluno = new();
+            Matricula matricula = new();
             aluno.Nome = txtNome.Text;
             aluno.DataNascimento = dateTime.Value;
             aluno.Email = txtEmail.Text;
-            aluno.SalvarAluno();
+            var idAluno = aluno.SalvarAluno();
+            matricula.Aluno_Id = idAluno;
+            int index = cbxTurmas.SelectedIndex;
+            int idTurma = turmas[index].Id;
+            matricula.Turma_Id = idTurma;
+            matricula.Insert();
             MessageBox.Show("Aluno Cadastrado!");
         }
     }
