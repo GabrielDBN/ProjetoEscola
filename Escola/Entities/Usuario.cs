@@ -11,6 +11,12 @@ namespace Escola.Entities
     internal class Usuario
     {
 
+        private int id;
+        private string nome;
+        private string email;
+        private string senha;
+        private string tipo;
+
         public int Id { get; set; }
 
         public string Nome { get; set; }

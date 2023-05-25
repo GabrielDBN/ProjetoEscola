@@ -10,6 +10,11 @@ namespace Escola.Entities
 {
     internal class Disciplinas
     {
+        private int id { get; set; }
+        private string nome { get; set; }
+        private int professor_id { get; set; }
+        private string tipo_disciplina { get; set; }
+
         public int Id { get; set; }
         public string Nome { get; set; }
         public int Professor_id { get; set; }

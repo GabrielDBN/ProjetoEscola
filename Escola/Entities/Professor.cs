@@ -11,6 +11,9 @@ namespace Escola.Entities
 {
     internal class Professor
     {
+        private int id;
+        private string nome;
+        private int usuario_id;
         public int Id { get; set; }
         public string Nome { get; set; }
         public int Usuario_id { get; set; }

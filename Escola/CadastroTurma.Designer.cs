@@ -28,83 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.btnEnviar = new System.Windows.Forms.Button();
-            this.txtSemestre = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroTurma));
+            label1 = new Label();
+            txtNome = new TextBox();
+            btnEnviar = new Button();
+            txtSemestre = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(126, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Turma";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(111, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(86, 35);
+            label1.TabIndex = 0;
+            label1.Text = "Turma";
             // 
             // txtNome
             // 
-            this.txtNome.HideSelection = false;
-            this.txtNome.Location = new System.Drawing.Point(114, 49);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(100, 23);
-            this.txtNome.TabIndex = 1;
+            txtNome.HideSelection = false;
+            txtNome.Location = new Point(131, 80);
+            txtNome.Margin = new Padding(3, 4, 3, 4);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(114, 27);
+            txtNome.TabIndex = 1;
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(126, 152);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
-            this.btnEnviar.TabIndex = 2;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
-            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
+            btnEnviar.Location = new Point(111, 204);
+            btnEnviar.Margin = new Padding(3, 4, 3, 4);
+            btnEnviar.Name = "btnEnviar";
+            btnEnviar.Size = new Size(86, 31);
+            btnEnviar.TabIndex = 2;
+            btnEnviar.Text = "Enviar";
+            btnEnviar.UseVisualStyleBackColor = true;
+            btnEnviar.Click += btnEnviar_Click;
             // 
             // txtSemestre
             // 
-            this.txtSemestre.Location = new System.Drawing.Point(114, 90);
-            this.txtSemestre.Name = "txtSemestre";
-            this.txtSemestre.Size = new System.Drawing.Size(100, 23);
-            this.txtSemestre.TabIndex = 3;
+            txtSemestre.Location = new Point(131, 135);
+            txtSemestre.Margin = new Padding(3, 4, 3, 4);
+            txtSemestre.Name = "txtSemestre";
+            txtSemestre.Size = new Size(114, 27);
+            txtSemestre.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 15);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Turma";
+            label2.AutoSize = true;
+            label2.Location = new Point(71, 83);
+            label2.Name = "label2";
+            label2.Size = new Size(54, 20);
+            label2.TabIndex = 4;
+            label2.Text = "Turma:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 93);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 15);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Semestre";
+            label3.AutoSize = true;
+            label3.Location = new Point(52, 138);
+            label3.Name = "label3";
+            label3.Size = new Size(73, 20);
+            label3.TabIndex = 5;
+            label3.Text = "Semestre:";
             // 
             // CadastroTurma
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 259);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtSemestre);
-            this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.label1);
-            this.Name = "CadastroTurma";
-            this.Text = "CadastroTurma";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(311, 271);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(txtSemestre);
+            Controls.Add(btnEnviar);
+            Controls.Add(txtNome);
+            Controls.Add(label1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "CadastroTurma";
+            Text = "CadastroTurma";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

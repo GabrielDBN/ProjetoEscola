@@ -10,6 +10,11 @@ namespace Escola.Entities
 {
     internal class Matricula
     {
+        private int id;
+        private int aluno_Id;
+        private int turma_Id;
+
+
         public int Id { get; set; }
         public int Aluno_Id { get; set; }
         public int Turma_Id { get; set;  }

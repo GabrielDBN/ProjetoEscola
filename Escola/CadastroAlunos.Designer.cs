@@ -28,125 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnEnviar = new System.Windows.Forms.Button();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.dateTime = new System.Windows.Forms.DateTimePicker();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblData = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.cbxTurmas = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroAlunos));
+            btnEnviar = new Button();
+            txtNome = new TextBox();
+            txtEmail = new TextBox();
+            dateTime = new DateTimePicker();
+            lblNome = new Label();
+            lblEmail = new Label();
+            lblData = new Label();
+            lblTitle = new Label();
+            SuspendLayout();
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(167, 217);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(114, 23);
-            this.btnEnviar.TabIndex = 0;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
-            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
+            btnEnviar.Location = new Point(136, 267);
+            btnEnviar.Margin = new Padding(3, 4, 3, 4);
+            btnEnviar.Name = "btnEnviar";
+            btnEnviar.Size = new Size(130, 31);
+            btnEnviar.TabIndex = 0;
+            btnEnviar.Text = "Enviar";
+            btnEnviar.UseVisualStyleBackColor = true;
+            btnEnviar.Click += btnEnviar_Click;
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(167, 57);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(115, 23);
-            this.txtNome.TabIndex = 1;
+            txtNome.Location = new Point(164, 95);
+            txtNome.Margin = new Padding(3, 4, 3, 4);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(131, 27);
+            txtNome.TabIndex = 1;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(167, 94);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(115, 23);
-            this.txtEmail.TabIndex = 4;
+            txtEmail.Location = new Point(164, 144);
+            txtEmail.Margin = new Padding(3, 4, 3, 4);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(131, 27);
+            txtEmail.TabIndex = 4;
             // 
             // dateTime
             // 
-            this.dateTime.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTime.Location = new System.Drawing.Point(168, 129);
-            this.dateTime.Name = "dateTime";
-            this.dateTime.Size = new System.Drawing.Size(114, 23);
-            this.dateTime.TabIndex = 5;
+            dateTime.Format = DateTimePickerFormat.Short;
+            dateTime.Location = new Point(174, 202);
+            dateTime.Margin = new Padding(3, 4, 3, 4);
+            dateTime.Name = "dateTime";
+            dateTime.Size = new Size(131, 27);
+            dateTime.TabIndex = 5;
             // 
             // lblNome
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(98, 60);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(40, 15);
-            this.lblNome.TabIndex = 6;
-            this.lblNome.Text = "Nome";
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(105, 98);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(53, 20);
+            lblNome.TabIndex = 6;
+            lblNome.Text = "Nome:";
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(102, 102);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(36, 15);
-            this.lblEmail.TabIndex = 7;
-            this.lblEmail.Text = "Email";
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(109, 147);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(49, 20);
+            lblEmail.TabIndex = 7;
+            lblEmail.Text = "Email:";
             // 
             // lblData
             // 
-            this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(50, 135);
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(112, 15);
-            this.lblData.TabIndex = 10;
-            this.lblData.Text = "Data de nascimento";
-            this.lblData.Click += new System.EventHandler(this.lblData_Click);
+            lblData.AutoSize = true;
+            lblData.Location = new Point(26, 202);
+            lblData.Name = "lblData";
+            lblData.Size = new Size(142, 20);
+            lblData.TabIndex = 10;
+            lblData.Text = "Data de nascimento";
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.Location = new System.Drawing.Point(135, 9);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(147, 28);
-            this.lblTitle.TabIndex = 11;
-            this.lblTitle.Text = "Cadastro Aluno";
-            // 
-            // cbxTurmas
-            // 
-            this.cbxTurmas.FormattingEnabled = true;
-            this.cbxTurmas.Location = new System.Drawing.Point(168, 167);
-            this.cbxTurmas.Name = "cbxTurmas";
-            this.cbxTurmas.Size = new System.Drawing.Size(114, 23);
-            this.cbxTurmas.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(102, 170);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 15);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Turma";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTitle.Location = new Point(109, 26);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(186, 35);
+            lblTitle.TabIndex = 11;
+            lblTitle.Text = "Cadastro Aluno";
             // 
             // CadastroAlunos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 269);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbxTurmas);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.lblData);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.dateTime);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.btnEnviar);
-            this.Name = "CadastroAlunos";
-            this.Text = "Cadastro Alunos";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(391, 339);
+            Controls.Add(lblTitle);
+            Controls.Add(lblData);
+            Controls.Add(lblEmail);
+            Controls.Add(lblNome);
+            Controls.Add(dateTime);
+            Controls.Add(txtEmail);
+            Controls.Add(txtNome);
+            Controls.Add(btnEnviar);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "CadastroAlunos";
+            Text = "Cadastro Alunos";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -159,7 +143,5 @@
         private Label lblEmail;
         private Label lblData;
         private Label lblTitle;
-        private ComboBox cbxTurmas;
-        private Label label1;
     }
 }

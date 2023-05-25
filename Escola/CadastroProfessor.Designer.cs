@@ -28,104 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.btnEnviar = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroProfessor));
+            lblTitulo = new Label();
+            lblNome = new Label();
+            lblEmail = new Label();
+            lblSenha = new Label();
+            txtNome = new TextBox();
+            txtEmail = new TextBox();
+            txtSenha = new TextBox();
+            btnEnviar = new Button();
+            SuspendLayout();
             // 
             // lblTitulo
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo.Location = new System.Drawing.Point(108, 9);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(203, 28);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Cadastro de Professor";
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTitulo.Location = new Point(60, 20);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(261, 35);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "Cadastro de Professor";
             // 
             // lblNome
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(57, 63);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(40, 15);
-            this.lblNome.TabIndex = 1;
-            this.lblNome.Text = "Nome";
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(78, 82);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(53, 20);
+            lblNome.TabIndex = 1;
+            lblNome.Text = "Nome:";
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(57, 92);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(36, 15);
-            this.lblEmail.TabIndex = 2;
-            this.lblEmail.Text = "Email";
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(81, 121);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(49, 20);
+            lblEmail.TabIndex = 2;
+            lblEmail.Text = "Email:";
             // 
             // lblSenha
             // 
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(56, 121);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(39, 15);
-            this.lblSenha.TabIndex = 3;
-            this.lblSenha.Text = "Senha";
+            lblSenha.AutoSize = true;
+            lblSenha.Location = new Point(79, 159);
+            lblSenha.Name = "lblSenha";
+            lblSenha.Size = new Size(52, 20);
+            lblSenha.TabIndex = 3;
+            lblSenha.Text = "Senha:";
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(147, 60);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(140, 23);
-            this.txtNome.TabIndex = 4;
+            txtNome.Location = new Point(137, 79);
+            txtNome.Margin = new Padding(3, 4, 3, 4);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(160, 27);
+            txtNome.TabIndex = 4;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(146, 89);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(141, 23);
-            this.txtEmail.TabIndex = 5;
+            txtEmail.Location = new Point(136, 118);
+            txtEmail.Margin = new Padding(3, 4, 3, 4);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(161, 27);
+            txtEmail.TabIndex = 5;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(147, 118);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(140, 23);
-            this.txtSenha.TabIndex = 6;
-            this.txtSenha.UseSystemPasswordChar = true;
+            txtSenha.Location = new Point(137, 156);
+            txtSenha.Margin = new Padding(3, 4, 3, 4);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(160, 27);
+            txtSenha.TabIndex = 6;
+            txtSenha.UseSystemPasswordChar = true;
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(148, 187);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(139, 23);
-            this.btnEnviar.TabIndex = 7;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
-            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
+            btnEnviar.Location = new Point(112, 219);
+            btnEnviar.Margin = new Padding(3, 4, 3, 4);
+            btnEnviar.Name = "btnEnviar";
+            btnEnviar.Size = new Size(159, 31);
+            btnEnviar.TabIndex = 7;
+            btnEnviar.Text = "Enviar";
+            btnEnviar.UseVisualStyleBackColor = true;
+            btnEnviar.Click += btnEnviar_Click;
             // 
             // CadastroProfessor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 286);
-            this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.lblSenha);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.lblTitulo);
-            this.Name = "CadastroProfessor";
-            this.Text = "Cadastro Professor";
-            this.Load += new System.EventHandler(this.CadastroProfessor_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(387, 295);
+            Controls.Add(btnEnviar);
+            Controls.Add(txtSenha);
+            Controls.Add(txtEmail);
+            Controls.Add(txtNome);
+            Controls.Add(lblSenha);
+            Controls.Add(lblEmail);
+            Controls.Add(lblNome);
+            Controls.Add(lblTitulo);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "CadastroProfessor";
+            Text = "Cadastro Professor";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

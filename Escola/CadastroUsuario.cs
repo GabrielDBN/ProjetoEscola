@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace Escola
 {
     public partial class CadastroUsuario : Form
-    {   
+    {
         Usuario usuario = new Usuario();
         public CadastroUsuario()
         {
@@ -29,11 +29,6 @@ namespace Escola
             usuario.Tipo = cbxTipoUsuario.Text;
             var id = usuario.InsertUser();
             MessageBox.Show("id inserido: " + id);
-        }
-
-        private void CadastroUsuario_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

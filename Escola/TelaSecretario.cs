@@ -23,7 +23,7 @@ namespace Escola
             cadastroProfessor.Show();
         }
 
-        private void btnRegistrarAuluno_Click(object sender, EventArgs e)
+        private void btnRegistrarAluno_Click(object sender, EventArgs e)
         {
             CadastroAlunos cadastroAlunos = new();
             cadastroAlunos.Show();
@@ -31,25 +31,11 @@ namespace Escola
 
         private void btnRegistrarTurma_Click(object sender, EventArgs e)
         {
-           CadastroTurma cadastroTurma = new();
+            CadastroTurma cadastroTurma = new();
             cadastroTurma.Show();
         }
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
 
-        }
-
-        private void TelaSecretario_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRegistrarDisciplina_Click(object sender, EventArgs e)
         {
             CadstroDisciplina cadstroDisciplina = new CadstroDisciplina();
             cadstroDisciplina.Show();

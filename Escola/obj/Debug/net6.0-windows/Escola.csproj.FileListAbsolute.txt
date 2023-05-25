@@ -38,3 +38,4 @@ C:\Users\User\source\repos\Escola\Escola\obj\Debug\net6.0-windows\Escola.Cadastr
 C:\Users\User\source\repos\Escola\Escola\obj\Debug\net6.0-windows\Escola.CadastroTurma.resources
 C:\Users\User\source\repos\Escola\Escola\obj\Debug\net6.0-windows\Escola.CadstroDisciplina.resources
 C:\Users\User\source\repos\Escola\Escola\obj\Debug\net6.0-windows\Escola.GradeAluno.resources
+C:\Users\User\source\repos\Escola\Escola\obj\Debug\net6.0-windows\Escola.TelaProfessor.resources

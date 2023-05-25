@@ -28,92 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.btnEnviar = new System.Windows.Forms.Button();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblLogin = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            btnEnviar = new Button();
+            lblEmail = new Label();
+            txtEmail = new TextBox();
+            label2 = new Label();
+            lblLogin = new Label();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            txtSenha = new TextBox();
+            SuspendLayout();
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(165, 214);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
-            this.btnEnviar.TabIndex = 0;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
-            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
+            btnEnviar.Location = new Point(122, 209);
+            btnEnviar.Margin = new Padding(3, 4, 3, 4);
+            btnEnviar.Name = "btnEnviar";
+            btnEnviar.Size = new Size(86, 31);
+            btnEnviar.TabIndex = 0;
+            btnEnviar.Text = "Enviar";
+            btnEnviar.UseVisualStyleBackColor = true;
+            btnEnviar.Click += btnEnviar_Click;
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(90, 83);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(36, 15);
-            this.lblEmail.TabIndex = 1;
-            this.lblEmail.Text = "Email";
-            this.lblEmail.Click += new System.EventHandler(this.label1_Click);
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(53, 87);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(49, 20);
+            lblEmail.TabIndex = 1;
+            lblEmail.Text = "Email:";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(150, 80);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(125, 23);
-            this.txtEmail.TabIndex = 3;
+            txtEmail.Location = new Point(108, 84);
+            txtEmail.Margin = new Padding(3, 4, 3, 4);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(142, 27);
+            txtEmail.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 127);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Senha";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            label2.AutoSize = true;
+            label2.Location = new Point(50, 145);
+            label2.Name = "label2";
+            label2.Size = new Size(52, 20);
+            label2.TabIndex = 2;
+            label2.Text = "Senha:";
             // 
             // lblLogin
             // 
-            this.lblLogin.AutoSize = true;
-            this.lblLogin.Location = new System.Drawing.Point(177, 23);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(37, 15);
-            this.lblLogin.TabIndex = 5;
-            this.lblLogin.Text = "Login";
-            this.lblLogin.Click += new System.EventHandler(this.label3_Click);
+            lblLogin.AutoSize = true;
+            lblLogin.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblLogin.Location = new Point(139, 25);
+            lblLogin.Name = "lblLogin";
+            lblLogin.Size = new Size(55, 23);
+            lblLogin.TabIndex = 5;
+            lblLogin.Text = "Login";
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(150, 124);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(125, 23);
-            this.txtSenha.TabIndex = 7;
-            this.txtSenha.UseSystemPasswordChar = true;
+            txtSenha.Location = new Point(108, 142);
+            txtSenha.Margin = new Padding(3, 4, 3, 4);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(142, 27);
+            txtSenha.TabIndex = 7;
+            txtSenha.UseSystemPasswordChar = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 327);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.lblLogin);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.btnEnviar);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(316, 279);
+            Controls.Add(txtSenha);
+            Controls.Add(lblLogin);
+            Controls.Add(txtEmail);
+            Controls.Add(label2);
+            Controls.Add(lblEmail);
+            Controls.Add(btnEnviar);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Form1";
+            Text = "Tela de Login";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -21,11 +21,6 @@ namespace Escola
             InitializeComponent();
         }
 
-        private void CadastroProfessor_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnEnviar_Click(object sender, EventArgs e)
         {
             usuario.Nome = txtNome.Text;

@@ -17,7 +17,6 @@ namespace Escola
         private Professor professor = new();
         private List<Professor> professors;
         private Disciplinas disciplinas;
-        List<Turma> turmaList = Turma.ListAll(); 
         private List<string> diasDaSemana = new List<string>()
         {
             "Segunda-feira",
@@ -26,7 +25,6 @@ namespace Escola
             "Quinta-feira",
             "Sexta-feira"
         };
-
         private List<string> horarios = new List<string>()
         {
             "Matutino",
@@ -44,15 +42,11 @@ namespace Escola
             {
                 cbxDiaSemana.Items.Add(dia);
             }
-            foreach(string horario in horarios)
+            foreach (string horario in horarios)
             {
                 cbxHorarios.Items.Add(horario);
             }
-            foreach (Turma turma in turmaList)
-            {
-                cbxTurma.Items.Add(turma.Nome);
-            }
-            for ( int i = 0;i < professors.Count;i++ )
+            for (int i = 0; i < professors.Count; i++)
             {
                 cbxProfessorNome.Items.Add(professors[i].Nome);
             }
@@ -60,11 +54,9 @@ namespace Escola
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var indexProfessor = cbxProfessorNome.SelectedIndex;
-            var idProfessor = professors[indexProfessor].Id;
-            var indexTurma = cbxTurma.SelectedIndex;
-            var idTurma = turmaList[indexTurma].Id;
-        
+            var index = cbxProfessorNome.SelectedIndex;
+            var idProfessor = professors[index].Id;
+
             Disciplinas disciplinas = new();
             Horario horario = new();
             Turma turma = new();
@@ -72,31 +64,7 @@ namespace Escola
             disciplinas.Professor_id = idProfessor;
             disciplinas.Tipo_disciplina = cbxTipoDsiciplina.Text;
             var idDisciplina = disciplinas.Insert();
-            horario.Turma_id = idTurma;
-            horario.Disciplina_id = idDisciplina;
-            horario.Time = cbxHorarios.Text;
-            horario.Dia_semana = cbxDiaSemana.Text;
-            horario.Insert();
-            
-        }
-
-        private void lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbxDiaSemana_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
+            // falta puxar as turmas para o form
 
         }
     }

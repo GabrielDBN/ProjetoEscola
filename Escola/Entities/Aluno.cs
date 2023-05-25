@@ -10,6 +10,10 @@ namespace Escola.Entities
 {
     internal class Aluno
     {
+        private int id;
+        private string nome;
+        private DateTime dataNascimento;
+        private string email; 
         public int Id { get; set; }
         public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }

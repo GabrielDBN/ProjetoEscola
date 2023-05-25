@@ -10,6 +10,11 @@ namespace Escola.Entities
 {
     internal class Turma
     {
+        private int id;
+        private string nome;
+        private string semestre;
+
+
         public int Id { get; set; }  
         public string Nome { get; set; }
         public string Semestre { get; set; }

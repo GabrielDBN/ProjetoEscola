@@ -10,6 +10,12 @@ namespace Escola.Entities
 {
     internal class Horario
     {
+        private int id;
+        private string dia_semana;
+        private string time;
+        private int disciplina_id;
+        private int turma_id;
+
         public int Id { get; set; }
         public string Dia_semana { get; set; }
         public string Time { get; set; }

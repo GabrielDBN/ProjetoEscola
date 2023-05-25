@@ -28,170 +28,156 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegistrarProfessor = new System.Windows.Forms.Button();
-            this.btnRegistrarAuluno = new System.Windows.Forms.Button();
-            this.lblRegistros = new System.Windows.Forms.Label();
-            this.btnRegistrarTurma = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaSecretario));
+            btnRegistrarProfessor = new Button();
+            btnRegistrarAluno = new Button();
+            lblRegistros = new Label();
+            btnRegistrarTurma = new Button();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            groupBox3 = new GroupBox();
+            groupBox4 = new GroupBox();
+            btnRegistrarDisciplina = new Button();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            groupBox4.SuspendLayout();
+            SuspendLayout();
             // 
             // btnRegistrarProfessor
             // 
-            this.btnRegistrarProfessor.Location = new System.Drawing.Point(42, 25);
-            this.btnRegistrarProfessor.Name = "btnRegistrarProfessor";
-            this.btnRegistrarProfessor.Size = new System.Drawing.Size(113, 63);
-            this.btnRegistrarProfessor.TabIndex = 0;
-            this.btnRegistrarProfessor.Text = "Registrar";
-            this.btnRegistrarProfessor.UseVisualStyleBackColor = true;
-            this.btnRegistrarProfessor.Click += new System.EventHandler(this.btnRegistrarProfessor_Click);
+            btnRegistrarProfessor.Location = new Point(48, 28);
+            btnRegistrarProfessor.Margin = new Padding(3, 4, 3, 4);
+            btnRegistrarProfessor.Name = "btnRegistrarProfessor";
+            btnRegistrarProfessor.Size = new Size(129, 61);
+            btnRegistrarProfessor.TabIndex = 0;
+            btnRegistrarProfessor.Text = "Registrar";
+            btnRegistrarProfessor.UseVisualStyleBackColor = true;
+            btnRegistrarProfessor.Click += btnRegistrarProfessor_Click;
             // 
-            // btnRegistrarAuluno
+            // btnRegistrarAluno
             // 
-            this.btnRegistrarAuluno.Location = new System.Drawing.Point(51, 22);
-            this.btnRegistrarAuluno.Name = "btnRegistrarAuluno";
-            this.btnRegistrarAuluno.Size = new System.Drawing.Size(113, 62);
-            this.btnRegistrarAuluno.TabIndex = 1;
-            this.btnRegistrarAuluno.Text = "Registrar";
-            this.btnRegistrarAuluno.UseVisualStyleBackColor = true;
-            this.btnRegistrarAuluno.Click += new System.EventHandler(this.btnRegistrarAuluno_Click);
+            btnRegistrarAluno.Location = new Point(47, 29);
+            btnRegistrarAluno.Margin = new Padding(3, 4, 3, 4);
+            btnRegistrarAluno.Name = "btnRegistrarAluno";
+            btnRegistrarAluno.Size = new Size(130, 61);
+            btnRegistrarAluno.TabIndex = 1;
+            btnRegistrarAluno.Text = "Registrar";
+            btnRegistrarAluno.UseVisualStyleBackColor = true;
+            btnRegistrarAluno.Click += btnRegistrarAluno_Click;
             // 
             // lblRegistros
             // 
-            this.lblRegistros.AutoSize = true;
-            this.lblRegistros.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblRegistros.Location = new System.Drawing.Point(12, 9);
-            this.lblRegistros.Name = "lblRegistros";
-            this.lblRegistros.Size = new System.Drawing.Size(76, 20);
-            this.lblRegistros.TabIndex = 2;
-            this.lblRegistros.Text = "Secretario";
+            lblRegistros.AutoSize = true;
+            lblRegistros.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
+            lblRegistros.Location = new Point(12, 9);
+            lblRegistros.Name = "lblRegistros";
+            lblRegistros.Size = new Size(97, 25);
+            lblRegistros.TabIndex = 2;
+            lblRegistros.Text = "Secretario";
             // 
             // btnRegistrarTurma
             // 
-            this.btnRegistrarTurma.Location = new System.Drawing.Point(42, 22);
-            this.btnRegistrarTurma.Name = "btnRegistrarTurma";
-            this.btnRegistrarTurma.Size = new System.Drawing.Size(113, 62);
-            this.btnRegistrarTurma.TabIndex = 3;
-            this.btnRegistrarTurma.Text = "Registrar";
-            this.btnRegistrarTurma.UseVisualStyleBackColor = true;
-            this.btnRegistrarTurma.Click += new System.EventHandler(this.btnRegistrarTurma_Click);
+            btnRegistrarTurma.Location = new Point(48, 29);
+            btnRegistrarTurma.Margin = new Padding(3, 4, 3, 4);
+            btnRegistrarTurma.Name = "btnRegistrarTurma";
+            btnRegistrarTurma.Size = new Size(129, 61);
+            btnRegistrarTurma.TabIndex = 3;
+            btnRegistrarTurma.Text = "Registrar";
+            btnRegistrarTurma.UseVisualStyleBackColor = true;
+            btnRegistrarTurma.Click += btnRegistrarTurma_Click;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnRegistrarTurma);
-            this.groupBox1.Location = new System.Drawing.Point(22, 53);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Turma";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            groupBox1.Controls.Add(btnRegistrarTurma);
+            groupBox1.Location = new Point(25, 71);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(229, 112);
+            groupBox1.TabIndex = 4;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Turma";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnRegistrarAuluno);
-            this.groupBox2.Location = new System.Drawing.Point(239, 53);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 100);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Aluno";
+            groupBox2.Controls.Add(btnRegistrarAluno);
+            groupBox2.Location = new Point(283, 71);
+            groupBox2.Margin = new Padding(3, 4, 3, 4);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Padding = new Padding(3, 4, 3, 4);
+            groupBox2.Size = new Size(229, 112);
+            groupBox2.TabIndex = 5;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Aluno";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnRegistrarProfessor);
-            this.groupBox3.Location = new System.Drawing.Point(22, 178);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 100);
-            this.groupBox3.TabIndex = 6;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Professor";
+            groupBox3.Controls.Add(btnRegistrarProfessor);
+            groupBox3.Location = new Point(25, 222);
+            groupBox3.Margin = new Padding(3, 4, 3, 4);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Padding = new Padding(3, 4, 3, 4);
+            groupBox3.Size = new Size(229, 112);
+            groupBox3.TabIndex = 6;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Professor";
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Location = new System.Drawing.Point(248, 178);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 100);
-            this.groupBox4.TabIndex = 7;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Dsciplina";
+            groupBox4.Controls.Add(btnRegistrarDisciplina);
+            groupBox4.Location = new Point(283, 222);
+            groupBox4.Margin = new Padding(3, 4, 3, 4);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Padding = new Padding(3, 4, 3, 4);
+            groupBox4.Size = new Size(229, 112);
+            groupBox4.TabIndex = 7;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Disciplina";
             // 
-            // button1
+            // btnRegistrarDisciplina
             // 
-            this.button1.Location = new System.Drawing.Point(42, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 63);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.button2);
-            this.groupBox5.Location = new System.Drawing.Point(136, 305);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(200, 100);
-            this.groupBox5.TabIndex = 6;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Grade aluno";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(51, 22);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 62);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Registrar";
-            this.button2.UseVisualStyleBackColor = true;
+            btnRegistrarDisciplina.Location = new Point(47, 28);
+            btnRegistrarDisciplina.Margin = new Padding(3, 4, 3, 4);
+            btnRegistrarDisciplina.Name = "btnRegistrarDisciplina";
+            btnRegistrarDisciplina.Size = new Size(129, 61);
+            btnRegistrarDisciplina.TabIndex = 0;
+            btnRegistrarDisciplina.Text = "Registrar";
+            btnRegistrarDisciplina.UseVisualStyleBackColor = true;
+            btnRegistrarDisciplina.Click += btnRegistrarDisciplina_Click;
             // 
             // TelaSecretario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 450);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lblRegistros);
-            this.Name = "TelaSecretario";
-            this.Text = "Tela Secretario";
-            this.Load += new System.EventHandler(this.TelaSecretario_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(534, 378);
+            Controls.Add(groupBox4);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Controls.Add(lblRegistros);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "TelaSecretario";
+            Text = "Tela Secretario";
+            groupBox1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
+            groupBox4.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button btnRegistrarProfessor;
-        private Button btnRegistrarAuluno;
+        private Button btnRegistrarAluno;
         private Label lblRegistros;
         private Button btnRegistrarTurma;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         private GroupBox groupBox4;
-        private Button button1;
-        private GroupBox groupBox5;
-        private Button button2;
+        private Button btnRegistrarDisciplina;
     }
 }

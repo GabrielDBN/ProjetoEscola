@@ -28,125 +28,131 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblSenha = new System.Windows.Forms.Label();
-            this.lblTipoUsuario = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.cbxTipoUsuario = new System.Windows.Forms.ComboBox();
-            this.btnEnviar = new System.Windows.Forms.Button();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroUsuario));
+            lblTitulo = new Label();
+            lblEmail = new Label();
+            lblSenha = new Label();
+            lblTipoUsuario = new Label();
+            txtEmail = new TextBox();
+            txtSenha = new TextBox();
+            cbxTipoUsuario = new ComboBox();
+            btnEnviar = new Button();
+            lblNome = new Label();
+            txtNome = new TextBox();
+            SuspendLayout();
             // 
             // lblTitulo
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo.Location = new System.Drawing.Point(184, 9);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(162, 28);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Cadastro Usuario";
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTitulo.Location = new Point(124, 23);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(206, 35);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "Cadastro Usuario";
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(125, 85);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(36, 15);
-            this.lblEmail.TabIndex = 1;
-            this.lblEmail.Text = "Email";
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(103, 131);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(49, 20);
+            lblEmail.TabIndex = 1;
+            lblEmail.Text = "Email:";
             // 
             // lblSenha
             // 
-            this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(122, 114);
-            this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(39, 15);
-            this.lblSenha.TabIndex = 2;
-            this.lblSenha.Text = "Senha";
+            lblSenha.AutoSize = true;
+            lblSenha.Location = new Point(100, 170);
+            lblSenha.Name = "lblSenha";
+            lblSenha.Size = new Size(52, 20);
+            lblSenha.TabIndex = 2;
+            lblSenha.Text = "Senha:";
             // 
             // lblTipoUsuario
             // 
-            this.lblTipoUsuario.AutoSize = true;
-            this.lblTipoUsuario.Location = new System.Drawing.Point(90, 143);
-            this.lblTipoUsuario.Name = "lblTipoUsuario";
-            this.lblTipoUsuario.Size = new System.Drawing.Size(88, 15);
-            this.lblTipoUsuario.TabIndex = 3;
-            this.lblTipoUsuario.Text = "Tipo de usuario";
+            lblTipoUsuario.AutoSize = true;
+            lblTipoUsuario.Location = new Point(37, 209);
+            lblTipoUsuario.Name = "lblTipoUsuario";
+            lblTipoUsuario.Size = new Size(115, 20);
+            lblTipoUsuario.TabIndex = 3;
+            lblTipoUsuario.Text = "Tipo de usuario:";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(184, 82);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(153, 23);
-            this.txtEmail.TabIndex = 4;
+            txtEmail.Location = new Point(158, 128);
+            txtEmail.Margin = new Padding(3, 4, 3, 4);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(174, 27);
+            txtEmail.TabIndex = 4;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(184, 111);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(153, 23);
-            this.txtSenha.TabIndex = 5;
-            this.txtSenha.UseSystemPasswordChar = true;
+            txtSenha.Location = new Point(158, 167);
+            txtSenha.Margin = new Padding(3, 4, 3, 4);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(174, 27);
+            txtSenha.TabIndex = 5;
+            txtSenha.UseSystemPasswordChar = true;
             // 
             // cbxTipoUsuario
             // 
-            this.cbxTipoUsuario.FormattingEnabled = true;
-            this.cbxTipoUsuario.Location = new System.Drawing.Point(184, 140);
-            this.cbxTipoUsuario.Name = "cbxTipoUsuario";
-            this.cbxTipoUsuario.Size = new System.Drawing.Size(153, 23);
-            this.cbxTipoUsuario.TabIndex = 7;
+            cbxTipoUsuario.FormattingEnabled = true;
+            cbxTipoUsuario.Location = new Point(158, 206);
+            cbxTipoUsuario.Margin = new Padding(3, 4, 3, 4);
+            cbxTipoUsuario.Name = "cbxTipoUsuario";
+            cbxTipoUsuario.Size = new Size(174, 28);
+            cbxTipoUsuario.TabIndex = 7;
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(198, 210);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(110, 23);
-            this.btnEnviar.TabIndex = 8;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = true;
-            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
+            btnEnviar.Location = new Point(158, 281);
+            btnEnviar.Margin = new Padding(3, 4, 3, 4);
+            btnEnviar.Name = "btnEnviar";
+            btnEnviar.Size = new Size(126, 31);
+            btnEnviar.TabIndex = 8;
+            btnEnviar.Text = "Enviar";
+            btnEnviar.UseVisualStyleBackColor = true;
+            btnEnviar.Click += btnEnviar_Click;
             // 
             // lblNome
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(125, 56);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(40, 15);
-            this.lblNome.TabIndex = 9;
-            this.lblNome.Text = "Nome";
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(99, 93);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(53, 20);
+            lblNome.TabIndex = 9;
+            lblNome.Text = "Nome:";
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(184, 53);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(153, 23);
-            this.txtNome.TabIndex = 10;
+            txtNome.Location = new Point(158, 90);
+            txtNome.Margin = new Padding(3, 4, 3, 4);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(174, 27);
+            txtNome.TabIndex = 10;
             // 
             // CadastroUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 312);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.btnEnviar);
-            this.Controls.Add(this.cbxTipoUsuario);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.lblTipoUsuario);
-            this.Controls.Add(this.lblSenha);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblTitulo);
-            this.Name = "CadastroUsuario";
-            this.Text = "CadastroUsuario";
-            this.Load += new System.EventHandler(this.CadastroUsuario_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(451, 363);
+            Controls.Add(txtNome);
+            Controls.Add(lblNome);
+            Controls.Add(btnEnviar);
+            Controls.Add(cbxTipoUsuario);
+            Controls.Add(txtSenha);
+            Controls.Add(txtEmail);
+            Controls.Add(lblTipoUsuario);
+            Controls.Add(lblSenha);
+            Controls.Add(lblEmail);
+            Controls.Add(lblTitulo);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "CadastroUsuario";
+            Text = "CadastroUsuario";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

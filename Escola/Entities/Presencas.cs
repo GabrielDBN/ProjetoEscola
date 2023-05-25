@@ -11,6 +11,12 @@ namespace Escola.Entities
 {
     internal class Presencas
     {
+        private int id;
+        private int aluno_Id;
+        private int disciplina_Id;
+        private DateTime dia;
+        private int faltou;
+
         public int Id { get; set; }
         public int Aluno_Id { get; set; }
         public int Disciplina_Id { get; set; }
