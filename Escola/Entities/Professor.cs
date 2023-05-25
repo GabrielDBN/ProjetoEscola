@@ -31,7 +31,6 @@ namespace Escola.Entities
                     cmd.Parameters.AddWithValue("@nome", Nome);
                     cmd.Parameters.AddWithValue("@usuario_id", Usuario_id);
                     int linhasAfetadas = cmd.ExecuteNonQuery();
-                    MessageBox.Show($"Foram inseridas {0} linhas." + linhasAfetadas);
                 }
             }
             catch (Exception ex)
@@ -62,6 +61,43 @@ namespace Escola.Entities
                 }
             }
             return list;
+        }
+
+        public void ImportProfessorsFromCSV(string caminhoArquivo)
+        {
+            List<string[]> linhas = new List<string[]>();
+
+            using (StreamReader sr = new StreamReader(caminhoArquivo))
+            {
+                string linha;
+                while ((linha = sr.ReadLine()) != null)
+                {
+                    string[] colunas = linha.Split(';');
+                    linhas.Add(colunas);
+                }
+            }
+
+            foreach (string[] colunas in linhas)
+            {
+                if (colunas.Length >= 3)
+                {
+                    Usuario usuario = new Usuario();
+                    usuario.Nome = colunas[0].Replace("\"", "");
+                    usuario.Email = colunas[1];
+                    usuario.Senha = colunas[2];
+                    usuario.Tipo = "professor";
+                    var userId = usuario.InsertUser();
+
+                    if (colunas.Length >= 1)
+                    {
+                        Nome = colunas[0];
+                        Usuario_id = userId;
+                        Insert();
+                    }
+                    
+                }
+                
+            }
         }
     }
 }

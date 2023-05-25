@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Escola.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,6 +40,17 @@ namespace Escola
         {
             CadstroDisciplina cadstroDisciplina = new CadstroDisciplina();
             cadstroDisciplina.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dlgImportProfessores.Filter = "Arquivos CSV|*.csv";
+            dlgImportProfessores.Title = "Selecione o arquivo CSV";
+
+            var file = dlgImportProfessores.ShowDialog();
+            MessageBox.Show("nome do arquivo " + file);
+            Professor professor = new();
+            professor.ImportProfessorsFromCSV(dlgImportProfessores.FileName);
         }
     }
 }
