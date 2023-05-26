@@ -52,5 +52,14 @@ namespace Escola
             Professor professor = new();
             professor.ImportProfessorsFromCSV(dlgImportProfessores.FileName);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dlgImportAlunos.Filter = "Arquivos CSV|*.csv";
+            dlgImportAlunos.Title = "Selecione o arquivo CSV";
+            var file = dlgImportAlunos.ShowDialog();
+            Aluno aluno = new();
+            aluno.ImportAlunoFromCSV(dlgImportAlunos.FileName);
+        }
     }
 }

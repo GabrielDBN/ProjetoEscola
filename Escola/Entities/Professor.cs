@@ -66,7 +66,7 @@ namespace Escola.Entities
         public void ImportProfessorsFromCSV(string caminhoArquivo)
         {
             List<string[]> linhas = new List<string[]>();
-
+            
             using (StreamReader sr = new StreamReader(caminhoArquivo))
             {
                 string linha;
@@ -82,7 +82,7 @@ namespace Escola.Entities
                 if (colunas.Length >= 3)
                 {
                     Usuario usuario = new Usuario();
-                    usuario.Nome = colunas[0].Replace("\"", "");
+                    usuario.Nome = colunas[0].Replace("\"", " ");
                     usuario.Email = colunas[1];
                     usuario.Senha = colunas[2];
                     usuario.Tipo = "professor";

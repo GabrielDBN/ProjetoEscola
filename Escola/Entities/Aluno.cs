@@ -40,5 +40,33 @@ namespace Escola.Entities
 
                 }
         }
+        public void ImportAlunoFromCSV(string caminhoArquivo)
+        {
+            List<string[]> linhas = new List<string[]>();
+
+            using (StreamReader sr = new StreamReader(caminhoArquivo))
+            {
+                string linha;
+                while ((linha = sr.ReadLine()) != null)
+                {
+                    string[] colunas = linha.Split(';');
+                    linhas.Add(colunas);
+                }
+            }
+
+            foreach (string[] colunas in linhas)
+            {
+                if (colunas.Length >= 3)
+                {
+                    Aluno aluno = new Aluno();
+                    aluno.Nome = colunas[0];
+                    aluno.Email = colunas[1];
+                    aluno.DataNascimento = DateTime.Parse(colunas[2]);
+                    aluno.SalvarAluno();
+                    MessageBox.Show("funcionou essa merda!");
+                }
+
+            }
+        }
     }
 }

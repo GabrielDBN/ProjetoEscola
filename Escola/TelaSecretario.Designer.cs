@@ -40,6 +40,8 @@
             this.btnRegistrarDisciplina = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dlgImportProfessores = new System.Windows.Forms.OpenFileDialog();
+            this.btnImportAlunos = new System.Windows.Forms.Button();
+            this.dlgImportAlunos = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -96,7 +98,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnRegistrarAluno);
-            this.groupBox2.Location = new System.Drawing.Point(248, 53);
+            this.groupBox2.Location = new System.Drawing.Point(255, 166);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 84);
             this.groupBox2.TabIndex = 5;
@@ -116,7 +118,7 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btnRegistrarDisciplina);
-            this.groupBox4.Location = new System.Drawing.Point(248, 166);
+            this.groupBox4.Location = new System.Drawing.Point(255, 53);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(200, 84);
             this.groupBox4.TabIndex = 7;
@@ -142,15 +144,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnImportAlunos
+            // 
+            this.btnImportAlunos.Location = new System.Drawing.Point(255, 248);
+            this.btnImportAlunos.Name = "btnImportAlunos";
+            this.btnImportAlunos.Size = new System.Drawing.Size(200, 24);
+            this.btnImportAlunos.TabIndex = 9;
+            this.btnImportAlunos.Text = "Importar alunos";
+            this.btnImportAlunos.UseVisualStyleBackColor = true;
+            this.btnImportAlunos.Click += new System.EventHandler(this.button2_Click);
+            // 
             // TelaSecretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(467, 284);
+            this.Controls.Add(this.btnImportAlunos);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblRegistros);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -178,5 +191,7 @@
         private Button btnRegistrarDisciplina;
         private Button button1;
         private OpenFileDialog dlgImportProfessores;
+        private Button btnImportAlunos;
+        private OpenFileDialog dlgImportAlunos;
     }
 }
